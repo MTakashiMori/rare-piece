@@ -11,19 +11,23 @@ import { HomeComponent } from './modules/home/home.component';
 
 import { AboutComponent } from './modules/about/about.component';
 import { Error404Component } from './pages/error404/error404.component';
+import { SideNavComponent } from './modules/side-nav/side-nav.component';
+import { StyleManualComponent } from './modules/style-manual/style-manual.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    AboutComponent,
-    Error404Component,
-  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     SharedModule,
+  ],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    Error404Component,
+    StyleManualComponent,
+    SideNavComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

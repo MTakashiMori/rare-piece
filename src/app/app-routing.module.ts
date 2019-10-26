@@ -4,11 +4,30 @@ import { HomeComponent } from './modules/home/home.component';
 import { AboutComponent } from './modules/about/about.component';
 import { Error404Component } from './pages/error404/error404.component'
 
+import { StyleManualComponent } from './modules/style-manual/style-manual.component';
+
 const routes: Routes = [
-    { path: '', component: HomeComponent},
-    { path: 'about', component: AboutComponent},
-    { path: '', redirectTo: '', pathMatch: 'full' },
-    { path: '**', component: Error404Component },
+    { 
+      path: '',
+      component: HomeComponent
+    },
+    { 
+      path: 'about',
+      component: AboutComponent
+    },
+    {
+      path: 'style-manual',
+      component: StyleManualComponent
+    },
+    { 
+      path: '',
+      redirectTo: '',
+      pathMatch: 'full'
+    },
+    { 
+      path: '**', 
+      component: Error404Component
+    },
     
 ];
 

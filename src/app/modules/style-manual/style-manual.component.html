@@ -1,0 +1,42 @@
+<div class="row">
+    <!--TODO make this element follow header-->
+    <div class="col-xs-12 col-md-2">
+        <app-side-nav></app-side-nav>
+    </div>
+
+    <div class="col-md-8 text-center">
+
+        <b class="title">
+            Feminino
+            <hr class="hr">
+        </b>
+        
+        <div class="row justify-content-around">
+            <div class="col-md-4" *ngFor="let img of imgListWoman">
+                <img src="{{img.src}}" class="img-item" alt="{{img.name}}">
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <b class="title">
+            Infantil
+            <hr class="hr">
+        </b>
+            
+        <div class="d-flex justify-content-around">
+            <div class="row">
+                <div class="col-md-4" *ngFor="let img of imgListChildren">
+                    <img src="{{img.src}}" class="img-item" alt="{{img.name}}">
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div>
+</div>
