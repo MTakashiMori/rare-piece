@@ -13,6 +13,7 @@ import { AboutComponent } from './modules/about/about.component';
 import { Error404Component } from './pages/error404/error404.component';
 import { SideNavComponent } from './modules/side-nav/side-nav.component';
 import { StyleManualComponent } from './modules/style-manual/style-manual.component';
+import { ModalGalleryComponent } from './modules/modal-gallery/modal-gallery.component';
 
 @NgModule({
   imports: [
@@ -28,8 +29,12 @@ import { StyleManualComponent } from './modules/style-manual/style-manual.compon
     Error404Component,
     StyleManualComponent,
     SideNavComponent,
+    ModalGalleryComponent,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    ModalGalleryComponent
+  ]
 })
 export class AppModule { }

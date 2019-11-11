@@ -4,6 +4,8 @@
         <app-side-nav></app-side-nav>
     </div>
 
+    <ngbd-modal-component></ngbd-modal-component>
+
     <div class="col-md-8 text-center">
 
         <b class="title">
@@ -13,7 +15,7 @@
         
         <div class="row justify-content-around">
             <div class="col-md-4" *ngFor="let img of imgListWoman">
-                <img src="{{img.src}}" class="img-item" alt="{{img.name}}">
+                <img src="{{img.src}}" class="img-item" alt="{{img.name}}" (click)="open(img.name)">
             </div>
         </div>
 
@@ -28,7 +30,7 @@
         <div class="d-flex justify-content-around">
             <div class="row">
                 <div class="col-md-4" *ngFor="let img of imgListChildren">
-                    <img src="{{img.src}}" class="img-item" alt="{{img.name}}">
+                    <img src="{{img.src}}" class="img-item" alt="{{img.name}}" (click)="open(img.name)">
                 </div>
             </div>
         </div>
