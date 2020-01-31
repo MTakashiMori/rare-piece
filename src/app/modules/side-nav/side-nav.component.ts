@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class SideNavComponent implements OnInit {
 
   imgList:Array<Object> = [
-      {src: 'assets/img/hook.png', name: 'hook', route: '', active: false },
-      {src: 'assets/img/schedule.png', name: 'schedule', route: '', active: false },
+      {src: 'assets/img/hook.png', name: 'hook', route: '/style-manual', active: false },
+      {src: 'assets/img/schedule.png', name: 'schedule', route: '/suppliers-schedule', active: false },
       {src: 'assets/img/hook.png', name: 'computes', route: '', active: false },
   ];
 

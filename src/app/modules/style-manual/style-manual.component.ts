@@ -9,8 +9,6 @@ import { ModalGalleryComponent } from '../modal-gallery/modal-gallery.component'
 })
 export class StyleManualComponent implements OnInit {
 
-
-
   imgListWoman: any = [
     {src: 'assets/img/style-manual/clothes.jpeg', name: 'woman clothes', route: ''},
     {src: 'assets/img/style-manual/woman-shoes.jpeg', name: 'woman shoes', route: ''},
