@@ -17,6 +17,7 @@ import { ModalGalleryComponent } from './modules/modal-gallery/modal-gallery.com
 import { SuppliersScheduleComponent } from './modules/suppliers-schedule/suppliers-schedule.component';
 import { LandingPageComponent } from './modules/landing-page/landing-page.component';
 import { BuildingComponent } from './pages/building/building.component';
+import { RpSearchComponent } from './modules/rp-search/rp-search.component';
 
 @NgModule({
   imports: [
@@ -36,6 +37,7 @@ import { BuildingComponent } from './pages/building/building.component';
     SuppliersScheduleComponent,
     LandingPageComponent,
     BuildingComponent,
+    RpSearchComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

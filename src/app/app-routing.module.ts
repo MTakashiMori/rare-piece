@@ -8,6 +8,7 @@ import { BuildingComponent} from './pages/building/building.component';
 import { StyleManualComponent } from './modules/style-manual/style-manual.component';
 import { SuppliersScheduleComponent } from './modules/suppliers-schedule/suppliers-schedule.component';
 import { LandingPageComponent } from './modules/landing-page/landing-page.component';
+import { RpSearchComponent } from './modules/rp-search/rp-search.component';
 
 const routes: Routes = [
     { 
@@ -26,6 +27,10 @@ const routes: Routes = [
         {
           path: 'suppliers-schedule',
           component: SuppliersScheduleComponent
+        },
+        {
+          path: 'search',
+          component: RpSearchComponent
         },
       ]
     },

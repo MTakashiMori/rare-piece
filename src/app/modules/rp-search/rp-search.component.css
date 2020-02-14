@@ -1,0 +1,10 @@
+#pr-busca {
+    position: absolute;
+    bottom: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 10px;
+    background: #fcb63a;
+    background: linear-gradient(90deg, #fcb63a 45%, #fed023 50%);
+}
