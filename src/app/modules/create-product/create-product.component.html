@@ -1,8 +1,26 @@
 <div>
 
-    <div>
+    <div class="row">
 
-        
+        <div class="col">
+            <h3 (click)="toggleForm()">Product</h3>
+        </div>
+
+        <div class="col">
+            <h3 (click)="toggleForm()">User</h3>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col" *ngIf="formProduct">
+            <h1>Product</h1>
+        </div>
+
+        <div class="col" *ngIf="formUser">
+            <h1>User</h1>
+        </div>
 
     </div>
 

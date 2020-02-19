@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateProductComponent implements OnInit {
 
+  formProduct: Boolean = true;
+  formUser: Boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleForm() {
+    this.formProduct = !this.formProduct;
+    this.formUser = !this.formUser;
   }
 
 }
