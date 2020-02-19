@@ -18,6 +18,7 @@ import { SuppliersScheduleComponent } from './modules/suppliers-schedule/supplie
 import { LandingPageComponent } from './modules/landing-page/landing-page.component';
 import { BuildingComponent } from './pages/building/building.component';
 import { RpSearchComponent } from './modules/rp-search/rp-search.component';
+import { CreateProductComponent } from './modules/create-product/create-product.component';
 
 @NgModule({
   imports: [
@@ -38,6 +39,7 @@ import { RpSearchComponent } from './modules/rp-search/rp-search.component';
     LandingPageComponent,
     BuildingComponent,
     RpSearchComponent,
+    CreateProductComponent
   ],
   providers: [],
   bootstrap: [AppComponent],

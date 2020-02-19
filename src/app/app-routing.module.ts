@@ -9,6 +9,7 @@ import { StyleManualComponent } from './modules/style-manual/style-manual.compon
 import { SuppliersScheduleComponent } from './modules/suppliers-schedule/suppliers-schedule.component';
 import { LandingPageComponent } from './modules/landing-page/landing-page.component';
 import { RpSearchComponent } from './modules/rp-search/rp-search.component';
+import { CreateProductComponent } from './modules/create-product/create-product.component';
 
 const routes: Routes = [
     { 
@@ -32,6 +33,10 @@ const routes: Routes = [
           path: 'search',
           component: RpSearchComponent
         },
+        {
+          path: 'create-product',
+          component: CreateProductComponent
+        }
       ]
     },
     {

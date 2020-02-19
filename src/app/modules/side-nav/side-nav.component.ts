@@ -12,6 +12,7 @@ export class SideNavComponent {
       {src: 'assets/img/search.png', name: 'search', route: '/search', active: false },
       {src: 'assets/img/hook.png', name: 'hook', route: '/style-manual', active: false },
       {src: 'assets/img/calendar.png', name: 'schedule', route: '/suppliers-schedule', active: false },
+      {src: 'assets/img/create_item.png', name: 'create_item', route: '/create-product', active: true },
   ];
 
   constructor(private router: Router) { 
