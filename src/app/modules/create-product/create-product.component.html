@@ -2,20 +2,16 @@
 
     <div class="row">
 
-        <div class="col">
-            <h3 (click)="toggleForm()">Product</h3>
-        </div>
-
-        <div class="col">
-            <h3 (click)="toggleForm()">User</h3>
-        </div>
+      <div class="col-sm text-center" *ngFor="let img of imgList">
+        <img src="{{img.src}}" class="img-icon" (click)="toggleForm(img.name)">
+      </div>
 
     </div>
 
     <div class="row">
 
         <div class="col" *ngIf="formProduct">
-            <h1>Product</h1>
+            <app-form-product></app-form-product>
         </div>
 
         <div class="col" *ngIf="formUser">

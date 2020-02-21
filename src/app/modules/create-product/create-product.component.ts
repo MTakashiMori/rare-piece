@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateProductComponent implements OnInit {
 
+  imgList:Array<ImageInterface> = [
+    {src: 'assets/img/hook.png', name: 'product', route: '/style-manual', active: false },
+    {src: 'assets/img/create_item.png', name: 'user', route: '/create-product', active: false },
+];
+
   formProduct: Boolean = true;
   formUser: Boolean = false;
 
@@ -15,9 +20,15 @@ export class CreateProductComponent implements OnInit {
   ngOnInit() {
   }
 
-  toggleForm() {
-    this.formProduct = !this.formProduct;
-    this.formUser = !this.formUser;
+  toggleForm(name) {
+    if(name == 'product') {
+      this.formUser = false;
+      this.formProduct = true;
+    }
+    if(name == 'user') {
+      this.formProduct = false;
+      this.formUser = true;
+    }
   }
 
 }

@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes } from '@angular/router';
@@ -19,6 +21,7 @@ import { LandingPageComponent } from './modules/landing-page/landing-page.compon
 import { BuildingComponent } from './pages/building/building.component';
 import { RpSearchComponent } from './modules/rp-search/rp-search.component';
 import { CreateProductComponent } from './modules/create-product/create-product.component';
+import { FormProductComponent } from './modules/form-product/form-product.component';
 
 @NgModule({
   imports: [
@@ -26,6 +29,8 @@ import { CreateProductComponent } from './modules/create-product/create-product.
     AppRoutingModule,
     NgbModule,
     SharedModule,
+    NgSelectModule,
+    FormsModule
   ],
   declarations: [
     AppComponent,
@@ -39,7 +44,8 @@ import { CreateProductComponent } from './modules/create-product/create-product.
     LandingPageComponent,
     BuildingComponent,
     RpSearchComponent,
-    CreateProductComponent
+    CreateProductComponent,
+    FormProductComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
