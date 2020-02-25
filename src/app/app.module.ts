@@ -9,48 +9,40 @@ import { AppComponent } from './app.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SharedModule } from './shared/shared.module';
-import { HomeComponent } from './modules/home/home.component';
+import { HomeModule } from './modules/home/home.module';
+import { LandingPageModule } from './modules/landing-page/landing-page.module';
+import { StyleManualModule } from './modules/style-manual/style-manual.module';
+import { SuppliersScheduleModule } from './modules/suppliers-schedule/suppliers-schedule.module';
+import { RpSearchModule } from './modules/rp-search/rp-search.module';
+import { CreateProductModule } from './modules/create-product/create-product.module';
+import { PagesModule } from './pages/pages.module';
 
-import { AboutComponent } from './modules/about/about.component';
-import { Error404Component } from './pages/error404/error404.component';
-import { SideNavComponent } from './modules/side-nav/side-nav.component';
-import { StyleManualComponent } from './modules/style-manual/style-manual.component';
-import { ModalGalleryComponent } from './modules/modal-gallery/modal-gallery.component';
-import { SuppliersScheduleComponent } from './modules/suppliers-schedule/suppliers-schedule.component';
-import { LandingPageComponent } from './modules/landing-page/landing-page.component';
-import { BuildingComponent } from './pages/building/building.component';
-import { RpSearchComponent } from './modules/rp-search/rp-search.component';
-import { CreateProductComponent } from './modules/create-product/create-product.component';
-import { FormProductComponent } from './modules/form-product/form-product.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule,
     NgbModule,
     SharedModule,
+    PagesModule,
     NgSelectModule,
-    FormsModule
+    FormsModule,
+    LandingPageModule,
+    RpSearchModule,
+    CreateProductModule,
+    HomeModule,
+    SuppliersScheduleModule,
+    StyleManualModule,
   ],
   declarations: [
     AppComponent,
-    HomeComponent,
-    AboutComponent,
-    Error404Component,
-    StyleManualComponent,
-    SideNavComponent,
-    ModalGalleryComponent,
-    SuppliersScheduleComponent,
-    LandingPageComponent,
-    BuildingComponent,
-    RpSearchComponent,
-    CreateProductComponent,
-    FormProductComponent
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [
+    AppComponent
+  ],
   entryComponents: [
-    ModalGalleryComponent
   ]
 })
 export class AppModule { }
