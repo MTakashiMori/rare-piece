@@ -5,6 +5,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbdModalComponent, NgbdModalContent } from './components/modal/modal.component';
 import { RouterModule } from '@angular/router';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
   imports: [
     CommonModule,
     NgbModule,
-    RouterModule
+    RouterModule,
+    NgSelectModule,
+    FormsModule,
   ],
   exports: [
     HeaderComponent,

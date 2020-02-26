@@ -9,6 +9,8 @@ import { ModalGalleryComponent } from '../modal-gallery/modal-gallery.component'
 })
 export class StyleManualComponent implements OnInit {
 
+  //TODO change type of image list
+
   imgListWoman: any = [
     {src: 'assets/img/style-manual/clothes.jpeg', name: 'woman clothes', route: ''},
     {src: 'assets/img/style-manual/woman-shoes.jpeg', name: 'woman shoes', route: ''},
@@ -18,7 +20,7 @@ export class StyleManualComponent implements OnInit {
     {src: 'assets/img/style-manual/bag.jpeg', name: 'bag', route: ''},
   ];
 
-  imgListChildren:Array<Object> = [
+  imgListChildren: any = [
     {src: 'assets/img/style-manual/baby-suit.jpeg', name: 'baby clothes', route: ''},
     {src: 'assets/img/style-manual/wardrobe.jpeg', name: 'furniture', route: ''},
     {src: 'assets/img/style-manual/troller.jpeg', name: 'troller', route: ''},

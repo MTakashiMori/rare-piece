@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
 
-  imgList:Array<Object> = [
+
+  //TODO change type of list
+  imgList: any = [
     {src: 'assets/img/search.png', name: 'search', route: '/search', active: true, title: 'PR Busca' },
     {src: 'assets/img/hook.png', name: 'hook', route: '/style-manual', active: false, title: 'Classificação de produtos' },
     {src: 'assets/img/calendar.png', name: 'schedule', route: '/suppliers-schedule', active: true, title: 'Agenda de fornecedor' },

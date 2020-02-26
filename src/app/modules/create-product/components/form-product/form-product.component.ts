@@ -1,35 +1,25 @@
-import { Component, OnInit} from '@angular/core';
-import { Observable } from 'rxjs';
+import { Component, OnInit } from '@angular/core';
+import { DepartmentService } from '../../department.service';
 
- @Component({
+@Component({
   selector: 'app-form-product',
   templateUrl: './form-product.component.html',
   styleUrls: ['./form-product.component.css']
 })
-export class FormProductComponent {
-
-  departmentsList: Array<Deparment>;
+export class FormProductComponent implements OnInit {
 
   departmentModel: Deparment;
 
-  constructor() {
-  }
+  departmentList: Deparment[];
+
+  departmentPath: string =  'department';
+
+  constructor(private departmentService: DepartmentService) { }
 
   ngOnInit() {
-    this.departmentsList = [
-      {
-        id: 1,
-        name: 'Male'
-      },
-      {
-        id: 2,
-        name: 'Female'
-      },
-      {
-        id: 3,
-        name: 'Child'
-      }
-    ];
+    this.departmentService.getAll().subscribe( (response: any) => {
+      this.departmentList = response.data.data
+    });
   }
 
 }

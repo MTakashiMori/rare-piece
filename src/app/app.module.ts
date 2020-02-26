@@ -4,7 +4,7 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -16,6 +16,8 @@ import { SuppliersScheduleModule } from './modules/suppliers-schedule/suppliers-
 import { RpSearchModule } from './modules/rp-search/rp-search.module';
 import { CreateProductModule } from './modules/create-product/create-product.module';
 import { PagesModule } from './pages/pages.module';
+import { HttpClientModule } from '@angular/common/http';
+import { DepartmentService } from './modules/create-product/department.service';
 
 
 @NgModule({
@@ -23,6 +25,7 @@ import { PagesModule } from './pages/pages.module';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
+    HttpClientModule,
     NgbModule,
     SharedModule,
     PagesModule,
@@ -38,7 +41,9 @@ import { PagesModule } from './pages/pages.module';
   declarations: [
     AppComponent,
   ],
-  providers: [],
+  providers: [
+    DepartmentService
+  ],
   bootstrap: [
     AppComponent
   ],
