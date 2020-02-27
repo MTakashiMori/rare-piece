@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/dist/rare-piece'));
 
 app.get('/*', function(req,res) {
     
-res.sendFile(path.join(__dirname+'/dist/rar-piece/index.html'));
+res.sendFile(path.join(__dirname+'/dist/rare-piece/index.html'));
 });
 
 // Inicia a aplicação pela porta configurada
