@@ -18,6 +18,7 @@ import { CreateProductModule } from './modules/create-product/create-product.mod
 import { PagesModule } from './pages/pages.module';
 import { HttpClientModule } from '@angular/common/http';
 import { DepartmentService } from './modules/create-product/services/department.service';
+import { ModalGalleryComponent } from './modules/style-manual/components/modal-gallery/modal-gallery.component';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import { DepartmentService } from './modules/create-product/services/department.
     AppComponent
   ],
   entryComponents: [
+    ModalGalleryComponent,
   ]
 })
 export class AppModule { }
