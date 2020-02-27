@@ -17,7 +17,7 @@ import { RpSearchModule } from './modules/rp-search/rp-search.module';
 import { CreateProductModule } from './modules/create-product/create-product.module';
 import { PagesModule } from './pages/pages.module';
 import { HttpClientModule } from '@angular/common/http';
-import { DepartmentService } from './modules/create-product/department.service';
+import { DepartmentService } from './modules/create-product/services/department.service';
 
 
 @NgModule({

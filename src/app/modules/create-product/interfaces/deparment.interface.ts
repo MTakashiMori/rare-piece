@@ -1,4 +1,4 @@
 interface Deparment {
-    id: number;
+    id: string;
     name: string;
 }

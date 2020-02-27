@@ -7,7 +7,9 @@ import { FormUserComponent } from './components/form-user/form-user.component';
 import { FormProductComponent } from './components/form-product/form-product.component';
 import { FormsModule } from '@angular/forms';
 import { NgSelectModule } from '@ng-select/ng-select';
-import { DepartmentService } from './department.service';
+import { DepartmentService } from './services/department.service';
+import { GroupService } from './services/group.service';
+import { CategoryService } from './services/category.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { DepartmentService } from './department.service';
     NgSelectModule,
   ],
   providers: [
-    DepartmentService
+    DepartmentService,
+    GroupService,
+    CategoryService
   ]
 })
 export class CreateProductModule { }
