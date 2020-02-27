@@ -1,0 +1,23 @@
+<div>
+
+    <div class="row">
+
+      <div class="col-sm text-center" *ngFor="let img of imgList">
+        <img src="{{img.src}}" class="img-icon" (click)="toggleForm(img.name)">
+      </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col" *ngIf="formProduct">
+          <app-form-product></app-form-product>
+        </div>
+
+        <div class="col" *ngIf="formUser">
+          <app-form-user></app-form-user>
+        </div>
+
+    </div>
+
+</div>

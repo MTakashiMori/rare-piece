@@ -1,0 +1,37 @@
+<ngbd-modal-component></ngbd-modal-component>
+
+<div class="text-center">
+
+    <b class="title text-center">
+        Feminino
+        <hr class="hr">
+    </b>
+
+    <div class="row justify-content-around">
+        <div class="col-md-4" *ngFor="let img of imgListWoman">
+            <img src="{{img.src}}" class="img-item" alt="{{img.name}}" (click)="open(img.name)">
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <b class="title">
+        Infantil
+        <hr class="hr">
+    </b>
+        
+    <div class="d-flex justify-content-around">
+        <div class="row">
+            <div class="col-md-4" *ngFor="let img of imgListChildren">
+                <img src="{{img.src}}" class="img-item" alt="{{img.name}}" (click)="open(img.name)">
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+</div>    

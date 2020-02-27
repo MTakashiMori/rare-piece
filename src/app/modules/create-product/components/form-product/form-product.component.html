@@ -1,0 +1,32 @@
+<div>
+
+  <div class="autocomplete">
+    <ng-select
+      [items]="departmentList"
+      (change)="changeDepartment()"
+      bindLabel="name"
+      placeholder="Select a department"
+      [(ngModel)]="departmentModel">
+    </ng-select>
+  </div>
+
+  <div class="autocomplete" *ngIf="departmentModel != null">
+    <ng-select
+      [items]="groupList"
+      (change)="changeGroup()"
+      bindLabel="name"
+      placeholder="Select a group"
+      [(ngModel)]="groupModel" >
+    </ng-select>
+  </div>
+
+  <div class="autocomplete" *ngIf="groupModel != null && departmentModel != null">
+    <ng-select
+      [items]="categoryList"
+      bindLabel="name"
+      placeholder="Select a category"
+      [(ngModel)]="categoryModel" >
+    </ng-select>
+  </div>
+
+</div>
