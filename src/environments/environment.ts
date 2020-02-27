@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api: 'http://localhost:8000/api/v1',
+  api: 'http://rare-piece-api.herokuapp.com/api/v1',
   system_name: 'Rare Piece',
   system_version: '1.00.0.',
 };
